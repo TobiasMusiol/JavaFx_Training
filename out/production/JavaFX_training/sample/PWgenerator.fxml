@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Accordion layoutX="108.0" layoutY="225.0" />
+      <VBox layoutX="88.0" layoutY="14.0" prefHeight="353.0" prefWidth="424.0" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="88.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="75.0" prefWidth="424.0" text="Password Generator">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <HBox alignment="BASELINE_LEFT" prefHeight="102.0" prefWidth="424.0">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="204.0">
+                     <children>
+                        <RadioButton fx:id="n" mnemonicParsing="false" text="numerics   ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="cu" contentDisplay="CENTER" mnemonicParsing="false" text="characters upper case">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="cl" mnemonicParsing="false" text="characters lower case   ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </VBox>
+                  <Label alignment="BASELINE_LEFT" prefHeight="36.0" prefWidth="143.0" text="Password length:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="pwLengthText" alignment="CENTER" prefHeight="30.0" prefWidth="79.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onMouseClicked="#createPW" prefHeight="42.0" prefWidth="428.0" text="Create Password">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <TextField fx:id="pwout" alignment="CENTER" prefHeight="34.0" prefWidth="424.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
